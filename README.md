@@ -31,3 +31,8 @@ If you'd like to contribute to this project, please open an issue or create a pu
 
 Sample Output:
 ![Screenshot 2023-10-26 100718](https://github.com/VengadesaBoopathi/HuffmanCodingVenkiboo/assets/131509767/e33869a6-fbc8-484a-9cad-457a2da38a60)
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Enjoy compressing and decompressing text with Huffman coding!
