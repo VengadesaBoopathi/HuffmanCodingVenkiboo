@@ -9,6 +9,7 @@ Follow the on-screen prompts to enter the name of the text file to be compressed
 The program will generate a compressed file named secretoutput.huf.
 To decode the compressed file, run the Decoding class. The decoded text will be saved in a file named DecodedFile.txt.
 
+
 Efficiency Calculation:          
 The project includes an efficiency calculation feature. After encoding the text, it provides information about the compression efficiency, including original file size, compressed file size, Huffman table size, and the overall compression efficiency.
 To view the efficiency calculation, run the HuffmanCodingProject and choose the option for decoding (press 'y'). The efficiency information will be displayed after decoding.
