@@ -11,8 +11,11 @@ To decode the compressed file, run the Decoding class. The decoded text will be 
 
 
 Efficiency Calculation:          
-The project includes an efficiency calculation feature. After encoding the text, it provides information about the compression efficiency, including original file size, compressed file size, Huffman table size, and the overall compression efficiency.
-To view the efficiency calculation, run the HuffmanCodingProject and choose the option for decoding (press 'y'). The efficiency information will be displayed after decoding.
+The project includes an efficiency calculation feature. After encoding the text,
+it provides information about the compression efficiency, including original file size, 
+compressed file size, Huffman table size, and the overall compression efficiency.
+To view the efficiency calculation, run the HuffmanCodingProject and choose the option
+for decoding (press 'y'). The efficiency information will be displayed after decoding.
 
 File Structure:          
 HuffmanCodingProject.java: Main class for encoding and decoding.
@@ -30,7 +33,8 @@ Contributing:
 If you'd like to contribute to this project, please open an issue or create a pull request with your proposed changes.
 
 Sample Output:
-![Screenshot 2023-10-26 100718](https://github.com/VengadesaBoopathi/HuffmanCodingVenkiboo/assets/131509767/e33869a6-fbc8-484a-9cad-457a2da38a60)
+![image](https://github.com/VengadesaBoopathi/HuffmanCodingVenkiboo/assets/131509767/7524fe56-474c-4cc0-9b57-aea37b7925d0)
+
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
