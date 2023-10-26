@@ -1,32 +1,37 @@
 import java.io.*;
-import java.util.*;
 
 public class Decoding {
-    Encoding obj=new Encoding();
+    /*
+     * this method gets each charcter from secretoutput.huf and comapare with
+     * huffman code table and decode(writes) into decodedfile
+     */
+
     public void decodeFile() {
-        String inputFile="output.huf";
-        String outputFile="DecodedFile.txt";
+        String inputFile = Encoding.outputFile;
+        String outputFile = "DecodedFile.txt";
+
         try {
             BitInputStream bitInputStream = new BitInputStream(new FileInputStream(inputFile));
             FileWriter fileWriter = new FileWriter(outputFile);
-            
-            StringBuilder currentBitString = new StringBuilder();
-            
+
+            String codeBit = "";
             int bit;
+
             while ((bit = bitInputStream.readBit()) != -1) {
-                currentBitString.append(bit);
-                for (String key : obj.newTable.keySet()) {
-                    if (obj.newTable.get(key).equals(currentBitString.toString())) {
+                codeBit += (bit + "");
+                for (String key : Encoding.newTable.keySet()) {
+                    String value = Encoding.newTable.get(key);
+                    if (value.equals(codeBit)) {
                         fileWriter.write(key);
-                        currentBitString.setLength(0); // Reset the bit string
-                        break; // Move on to the next bits
+                        codeBit = "";
+                        break;
                     }
                 }
             }
 
             fileWriter.close();
             bitInputStream.close();
-            System.out.println("Successfully decoded to the file.");
+            System.out.println("\nSuccessfully DECODED  the file into " + outputFile + "\n\n");
         } catch (IOException e) {
             System.out.println("Unable to open or read the file.");
         }
